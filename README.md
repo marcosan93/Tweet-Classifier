@@ -1,5 +1,5 @@
 # Tweet Classification
-Marco Santos & Harris Nathel
+**Collaborators:** Marco Santos & Harris Nathel
 
 ## Table of Contents:
 * [Goal](#Goal)
@@ -20,6 +20,7 @@ Given a specific subject and two different cities. Using NLP and classification 
 - Specific tweets were scraped based on a **user-defined subject**
 - Tweets were selected by **two user-defined cities**
 - _Any subject and two cities_ can be inputted within the program to test the classifiers
+- 10,000 tweets were grabbed from the two different cities totaling 20,000 tweets
 
 For the sake of consistency, the focus for this specific iteration was on the subject of **Trump** within **Seattle** and **Jacksonville**.
 
@@ -81,9 +82,14 @@ Testing Score - 59%
 ![](Images/svmconmat.png)
 
 ## Deep Learning with Keras
+A Sequential model was used with only 3 layers within the neural network.  After training for 300 epochs with a batch size of 256, the results were similar to the other classification models. No significant changes warranted the need for a neural network for the tweets.
 
 ## Potential Improvements
+- More models could be applied such as XGBoost, KNN, etc. for more comparisons and potential improved results.
+- Feature engineering such as _ngrams_ for possibly better results.
+- More cleaning with other techniques or different modules such as *SpaCy*
+- More experimentation with the neural network
 
 ## Closing
-
+Due to the nature of the question, it is inherently difficult to classify whether a tweet comes from one location or not.  However, these classification models did perform better than randomly guessing (dummy classifier).  Most models performed at least 10% better than the Dummy Classifier and the best performing model was Naive Bayes. Even though these models performed this way for this dataset, a new subject and cities could significantly alter the overall results. 
 
