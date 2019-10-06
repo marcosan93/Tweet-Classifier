@@ -31,6 +31,17 @@ For the sake of consistency, the focus for this specific iteration was on the su
 
 ## Data Exploration
 
+After gathering and cleaning all of the tweets we wanted to look at how what words were more common in each of the cities.
+
+![WordCloud](https://github.com/marcosan93/Tweet-Classifier/blob/master/Images/alltweets_wc.png)
+
+Because our subject was "Trump", we wanted to look at how specific words were in each city and compare the two cities.
+WordtoVec was used to get similarity scores.
+
+![SimilarityToTrump](https://github.com/marcosan93/Tweet-Classifier/blob/master/Images/sim_to_trump_bargraph.png)
+
+It was interesting to see that words associated with negative things in the news were more common in Seattle (the more liberal city) than in Jacksonville. Words that we thought would be associated pro-trump tweets were more common in Jacksonville.
+
 ## Classification Modeling
 * [Dummy Classifier - Baseline Model](#Dummy-Classifier)
 * [Random Forest](#Random-Forest)
